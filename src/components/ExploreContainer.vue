@@ -2,12 +2,16 @@
   <div id="container">
     <strong>{{ name }}</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <p><ion-button :router-link="link" v-if="link">Go to Tab {{ link }}</ion-button></p>
   </div>
 </template>
 
 <script setup lang="ts">
+import { IonButton } from "@ionic/vue";
+
 defineProps({
   name: String,
+  link: String
 });
 </script>
 

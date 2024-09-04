@@ -1,13 +1,13 @@
 <template>
   <ion-page>
-    <header-component title="Tab 1"/>
+    <header-component title="Tab 2 subpage" :show-back="true"/>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Tab 1</ion-title>
+          <ion-title size="large">Tab 2 subpage</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ExploreContainer name="Tab 1 page" link="/tab1/subpage"/>
+      <ExploreContainer name="Tab 2 subpage"/>
     </ion-content>
     <TabBar/>
   </ion-page>
